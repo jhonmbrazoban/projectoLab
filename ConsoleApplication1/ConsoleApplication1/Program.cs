@@ -12,18 +12,19 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("HOLA BIENVENIDO A LA MULTICALCULADORA");
             Console.WriteLine("Seleccione la opcion que desea trabajar:" + "\n");
-            Console.WriteLine("1- Calculadora basica"  );
+            Console.WriteLine("1- Calculadora basica");
             Console.WriteLine("2- Conversor de grados");
             Console.WriteLine("3- Calculadora de notas");
             string eleccion = Console.ReadLine();
 
             switch (eleccion)
             {
-                case"1":
+                case "1":
                     Calculadora calc = new Calculadora();
+                    calc.MostrarMenu();
                     break;
-                case"2":
-                    convertidor grados= new convertidor();
+                case "2":
+                    convertidor grados = new convertidor();
                     break;
                 case "3":
                     notas calcu = new notas();
@@ -51,26 +52,14 @@ namespace ConsoleApplication1
         {
             return a - b;
         }
-       // int a = Console.Read();
-        //int b = Console.Read();
-       // string signo;
 
-        //switch(signo)
-        //{
-         //   case" + ":
-        
-       // }
+        internal void MostrarMenu()
+        {
+            int a = Console.Read();
+            int b = Console.Read();
+            string signo;
 
-        
+        }
 
-        //switch(signo)
-          //  {
-            //}
-
-
-       
-        
-
-         
     }
 }
